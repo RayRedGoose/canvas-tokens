@@ -1,5 +1,11 @@
 # @workday/canvas-tokens-web
 
+## 0.1.3
+
+### Patch Changes
+
+- 4715e9f: test
+
 ## 0.1.1
 
 ### Patch Changes
