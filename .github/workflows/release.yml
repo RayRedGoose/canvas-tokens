@@ -64,7 +64,7 @@ jobs:
         id: package
         run: echo "package=$(node scripts/utils/get-package-name.js)" >> $GITHUB_OUTPUT
         env:
-          HEAD_COMMIT: github.event.head_commit.message
+          HEAD_COMMIT: ${{ github.event.head_commit.message }}
       
       - name: Get previous tag
         id: previous-tag
