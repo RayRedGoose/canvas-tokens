@@ -3,9 +3,9 @@ const fs = require('fs');
 
 const {PACKAGE = '', CHANGESET_BODY = '', VERSION = 'patch'} = process.env;
 
-const header = `----------
+const header = `---
 @workday/${PACKAGE}: ${VERSION}
-----------`;
+---`;
 
 const [prefix] = PACKAGE.split('-').reverse();
 
