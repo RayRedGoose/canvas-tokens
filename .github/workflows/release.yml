@@ -84,7 +84,7 @@ jobs:
         run: node scripts/utils/update-changelog.js
         env:
           PACKAGE: ${{steps.package.outputs.package}}
-          VERSION: ${{ inputs.version }}
+          VERSION: ${{inputs.version}}
           CHANGESET_BODY: ${{steps.changeset.outputs.body}}
 
       - name: Create Release Pull Request
