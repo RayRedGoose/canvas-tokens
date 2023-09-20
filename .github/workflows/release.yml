@@ -87,10 +87,7 @@ jobs:
           VERSION: ${{ inputs.version }}
           CHANGESET_BODY: ${{steps.changeset.outputs.body}}
 
-      - name: Check File
-        run: head -n 20 .changeset/pre-changelog.md
-
-      # - name: Create Release Pull Request
-      #   uses: changesets/action@v1
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GH_RW_TOKEN }}
+      - name: Create Release Pull Request
+        uses: changesets/action@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_RW_TOKEN }}
