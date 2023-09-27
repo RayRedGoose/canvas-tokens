@@ -1,5 +1,13 @@
 # @workday/canvas-tokens-web
 
+## 0.1.6
+
+### Patch Changes
+
+- **Other**
+
+  - fix(web): Add logs ([@RayRedGoose](https://github.com/RayRedGoose))
+
 ## 0.1.5
 
 ### Patch Changes
