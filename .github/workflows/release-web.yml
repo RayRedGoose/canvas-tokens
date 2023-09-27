@@ -156,6 +156,13 @@ jobs:
         if: steps.npm-cache.outputs.cache-hit != 'true'
         run: npm install --production=false
 
+      - name: See git log
+        run: |
+          git log --no-walk --tags --oneline -n 1
+
+      - name: See tags
+        run: git tag
+
       - name: Creating .npmrc
         run: |
             cat << EOF > "$HOME/.npmrc"
